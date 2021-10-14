@@ -7,7 +7,7 @@ Remote Industrial Sites present unique challenges to operate efficiently and eff
 As shown in Figure 1. Field Camera is one example of an embedded device that addresses the challenges of Remote Industrial Operations. It is essentially a standalone Camera System that relies on solar and battery power to eliminate dependence on utility power. For Internet Connection, it uses cellular wireless connection. It is used to monitor the remote industrial operations, such as in the physical construction industry.
 
 ![Field Camera](https://github.com/isjosan/embsys310/blob/master/assignment01/images/Field-camera.png)
-Figure 1.  Field Camera Use Case in Construction Industry
+###### Figure 1.  Field Camera Use Case in Construction Industry
 
 
 
