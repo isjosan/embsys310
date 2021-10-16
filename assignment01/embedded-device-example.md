@@ -51,34 +51,34 @@ The Field Camera has the following features:
 
  ## 3. Design Challenges
  
- ### 3.1 Throughput
+ ### 3.1  Throughput
  
  
- ### 3.2 Response
+ ### 3.2  Response
  
  
- ### 3.3 Testability
+ ### 3.3  Testability
  
  
- ### 3.4 Troubleshooting (diagnosability)
+ ### 3.4  Troubleshooting (diagnosability)
  
  
- ### 3.5 Reliability
+ ### 3.5  Reliability
  
  
- ### 3.6 Memory Space
+ ### 3.6  Memory Space
  
  
- ### 3.7 Program Installation
+ ### 3.7  Program Installation
  
  
- ### 3.8 Power Consumption
+ ### 3.8  Power Consumption
  
  
- ### 3.9 Security
+ ### 3.9  Security
  
  
- ### 3.10 Cost
+ ### 3.10  Cost
  
  
  
