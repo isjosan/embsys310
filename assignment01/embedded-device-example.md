@@ -45,37 +45,39 @@ The Field Camera has the following features:
   * Option to take timelapse camera shots for short periods of time
   * Local storage of shots for at leasr a 24 hour cycle
   * Programmable upload of stored images to the back-end repository in the cloud
-  * Remote camera control from controlling platform
+  * Remote camera control from controlling platform; response time < 200 ms
   * 24 x 7 wide angle day and night vision
   * Infra-Red (IR) illuminator for night vision
 
  ## 3. Design Challenges
  
- ### 3.1  Throughput
+ ### 3.1   Throughput
+ 
+The Field Camera can transmit images to the back-end system in the Cloud, only as fast as it can take the shots and then convert the image to the expected format before it can be transmitted over the wireless communication link. This will involve digitizing the image into the most efficient picture format that meets the requirements. For example, if the application expects the camera to send at least 1 picture every 15 seconds, the device should process the image fast enough, while also accomodating the transmission delay, and keeping latency less than 500 ms, as listed in the features.  
+ 
+ ### 3.2   Response
+When receiving remote control commands from the back-end Cloud, the incoming control messages must be processed in real time, so that control actions can be prioritized and responded within 200 ms, as listed in the features.
+Also, the Keep Alives / Alerts / beacons / and other messaging must be processed and sent out in real time.
+ 
+ ### 3.3   Testability
+As with any embedded device, ensuring a completely tested Field Camera to cover all possible environment conditions is quite a bit of a challenge. For example, what happens if a combination of environment conditions combined with intermittent failure of network connection leads to a device malfunction. Apart from comprehensive unit testing of the program code, there must be a full suite of end to end testing that closely simluates the actual environment conditions that will be encountered when Camera is installed in a dusty construction site and extreme environment conditions.
+ 
+ ### 3.4   Troubleshooting (diagnosability)
  
  
- ### 3.2  Response
+ ### 3.5   Reliability
  
  
- ### 3.3  Testability
+ ### 3.6   Memory Space
  
  
- ### 3.4  Troubleshooting (diagnosability)
+ ### 3.7   Program Installation
  
  
- ### 3.5  Reliability
+ ### 3.8   Power Consumption
  
  
- ### 3.6  Memory Space
- 
- 
- ### 3.7  Program Installation
- 
- 
- ### 3.8  Power Consumption
- 
- 
- ### 3.9  Security
+ ### 3.9   Security
  
  
  ### 3.10  Cost
