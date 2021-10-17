@@ -32,7 +32,7 @@ The Field Camera has the following features:
   * Hard chip based device & network security
   * Remote device management and health monitoring
   * Automated security alarms, alerts & messaging
-  * Keep Alives / beacons / alerts sent periodically to back-end cloud platform
+  * Keep Alives / Alerts/ Beacons sent periodically to back-end cloud platform
   * Ability to disable dveice remotely
 * Wireless Connectivity
   * Secure cellular wireless is primary connection mode
@@ -57,7 +57,7 @@ The Field Camera can transmit images to the back-end system in the Cloud, only a
  
  ### 3.2   Response
 When receiving remote control commands from the back-end Cloud, the incoming control messages must be processed in real time, so that control actions can be prioritized and responded within 200 ms, as listed in the features.
-Also, the Keep Alives / Alerts / beacons / and other messaging must be processed and sent out in real time.
+Also, the Keep Alives / Alerts / Beacons / and other messaging must be processed and sent out in real time.
  
  ### 3.3   Testability
 As with any embedded device, ensuring a completely tested Field Camera to cover all possible environment conditions is quite a bit of a challenge. For example, what happens if a combination of environment conditions combined with intermittent failure of network connection leads to a device malfunction. Apart from comprehensive unit testing of the program code, there must be a full suite of end to end testing that closely simluates the actual environment conditions that will be encountered when Camera is installed in a dusty construction site and extreme environment conditions.  
@@ -84,7 +84,7 @@ This involves the challenge of automating the software installation and configur
  All these factors lead to the challenge of designing the Camera with Low Energy Components, and implementing Energy Conservation techniques, such as shutting down unnecessary program threads when the Camera is idling.
  
  ### 3.9   Security
-The Field Camera has connection to the Internet via Wireless Connection, so network security is paramount, along with Device Security. Typically, the highest level of security must be implemented, that is based on strong encryption keys derived from hardware characteristics. The industry standard TLS level security protocols are a necessity for the Field Camera, that protect the firmware, and the nwtwork packets that carry payload and the control messages received from the remote operator.
+The Field Camera has connection to the Internet via Wireless Connection, so Network Security is paramount, along with Device Security. Typically, the highest level of security must be implemented, that is based on strong encryption keys derived from hardware characteristics. The industry standard TLS level security protocols are a necessity for the Field Camera, that protect the firmware, and the network packets that carry payload, and the control messages received from the remote operator.
  
  ### 3.10  Cost
 The Field Camera features drive a very rigid cost-benefit analysis. Typically a justification is required for each software and hardware component that is used in the construction of the embedded device. There is no room for having extra hardware components, extra ports, or even spare memory footprint, unless there is a strong reasoning. The Camera device must justify every dollar that goes into building the final product.  
