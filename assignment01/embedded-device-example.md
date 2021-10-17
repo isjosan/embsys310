@@ -87,7 +87,8 @@ This involves the challenge of automating the software installation and configur
 The Field Camera has connection to the Internet via Wireless Connection, so network security is paramount, along with Device Security. Typically, the highest level of security must be implemented, that is based on strong encryption keys derived from hardware characteristics. The industry standard TLS level security protocols are a necessity for the Field Camera, that protect the firmware, and the nwtwork packets that carry payload and the control messages received from the remote operator.
  
  ### 3.10  Cost
- 
+The Field Camera features drive a very rigid cost-benefit analysis. Typically a justification is required for each software and hardware component that is used in the construction of the embedded device. There is no room for having extra hardware components, extra ports, or even spare memory footprint, unless there is a strong reasoning. The Camera device must justify every dollar that goes into building the final product.  
+Therefore, there is a strong emphasis on optimization, and achieving more results with fewer components, both software as well as hardware.
  
  
  
