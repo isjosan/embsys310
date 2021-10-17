@@ -60,17 +60,21 @@ When receiving remote control commands from the back-end Cloud, the incoming con
 Also, the Keep Alives / Alerts / beacons / and other messaging must be processed and sent out in real time.
  
  ### 3.3   Testability
-As with any embedded device, ensuring a completely tested Field Camera to cover all possible environment conditions is quite a bit of a challenge. For example, what happens if a combination of environment conditions combined with intermittent failure of network connection leads to a device malfunction. Apart from comprehensive unit testing of the program code, there must be a full suite of end to end testing that closely simluates the actual environment conditions that will be encountered when Camera is installed in a dusty construction site and extreme environment conditions.
+As with any embedded device, ensuring a completely tested Field Camera to cover all possible environment conditions is quite a bit of a challenge. For example, what happens if a combination of environment conditions combined with intermittent failure of network connection leads to a device malfunction. Apart from comprehensive unit testing of the program code, there must be a full suite of end to end testing that closely simluates the actual environment conditions that will be encountered when Camera is installed in a dusty construction site and extreme environment conditions.  
+Other uncommon test scenarios will involve fault conditions, such as, what happens when the camera loses network connection; or what happens when the camera crashes and cannot restart; is the automatic recovery mechanism working?
  
  ### 3.4   Troubleshooting (diagnosability)
- 
+ A troubleshooting challenge is to find the Root Cause of the failure event. This typically involves a procedure called Root Cause Analysis (RCA). The RCA requires enough traces from the instant that led to the failure event. The primary source is usually the runtime logs that are created and stored while embedded program is running and includes memory core dump, that shows the contents of registers and the stack at the instant of crash. Sometimes these trace logs may not be conclusive and hard effort is required to reproduce the failure event and collect additional detailed logs.  
+The Camera device does not have a on-board display or a keyboard connected. So, this will require remote connection to the device over the network connection, or if that is not possible, then local connection to the device with a console cable or bluetooth interface. 
  
  ### 3.5   Reliability
- 
+The Camera device is expected to run unattended 24x7. So, it must be robust enough to withstand all environment conditions in the field, such as extreme temperature, moisture, vibration. This requires hardening the software as well as the hardware used to construct the device. Embedded programs running inside the Camera must be hard tested to eliminate any memory leaks, dangling pointers, memory fragmentation etc.; and are usually required by safety oriented industries, such as Construction, Health Care and Automotive, to be compliant with coding standards,for example, MISRA.  
+ In addition, the hardware components used to construct the Camera must be able to withstand the extreme environmental conditions at all times.
  
  ### 3.6   Memory Space
- 
- 
+The Field Camera requires significant amount of memory storage for Program as well as Data. However, it is not practical to have a large amount of memory as in a desktop computer. So, there is a need to strike a balance between requirement and what is practical. This may include clever programming techniques, such as, data compression, or compressing the size of captured images to reduce memory footprint.  
+Another technique would be, to process the images as fast as possible and transmit them to the back-end cloud, so that the precious memory space can be freed up. There is a need to arrive at how long the images can be stored locally on the device, and also what will be the compression overhead for the embedded program.
+
  ### 3.7   Program Installation
  
  
