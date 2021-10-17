@@ -80,10 +80,11 @@ The Field Camera is typically shipped to the site with a starter firmware progra
 This involves the challenge of automating the software installation and configuration process, and is necessary when installing firmware to large number of Cameras installed at the field sites.
  
  ### 3.8   Power Consumption
- 
+ The Field Camera runs on an energy budget, as it has no conenction to the unlimited utility power. The solar panels must charge the onboard batteries on a typical sunny day and have enough energy to power the onboard electronics for the dark portion of a typical 24 hour day and night cycle. In addition to that, what if there is a series of days without any sun, or if the sun is up for only a few hours when the batteries can be charged.  
+ All these factors lead to the challenge of designing the Camera with Low Energy Components, and implementing Energy Conservation techniques, such as shutting down unnecessary program threads when the Camera is idling.
  
  ### 3.9   Security
- 
+The Field Camera has connection to the Internet via Wireless Connection, so network security is paramount, along with Device Security. Typically, the highest level of security must be implemented, that is based on strong encryption keys derived from hardware characteristics. The industry standard TLS level security protocols are a necessity for the Field Camera, that protect the firmware, and the nwtwork packets that carry payload and the control messages received from the remote operator.
  
  ### 3.10  Cost
  
