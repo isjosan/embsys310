@@ -76,7 +76,8 @@ The Field Camera requires significant amount of memory storage for Program as we
 Another technique would be, to process the images as fast as possible and transmit them to the back-end cloud, so that the precious memory space can be freed up. There is a need to arrive at how long the images can be stored locally on the device, and also what will be the compression overhead for the embedded program.
 
  ### 3.7   Program Installation
- 
+The Field Camera is typically shipped to the site with a starter firmware program, that is just enough for initial boot up and connection to the backend application in the Cloud. Once the initial installation is achieved, the updated version of the firmware that is customized for a typical site will be pushed to the Camera Over The Air (OTA). Any subsequent updates and bug fixes will also be installed using the same process.  
+This involves the challenge of automating the software installation and configuration process, and is necessary when installing firmware to large number of Cameras installed at the field sites.
  
  ### 3.8   Power Consumption
  
