@@ -7,8 +7,8 @@
       ## 0x8000'0000
    c) Please note down which flags are set in the APSR register. And explain why.  
       ## N, V
-      ### N flag is set because msb is set to 1, and that indicates a negative value.
-      ### V flag is set because counter is declared as a signed integer variable, the msb is reserved for the sign bit. There is an overflow condition when 0x7FFFFFFF   value is incremented by 1.
+      ### N flag is set because msb (bit 31) is set to 1, and that indicates a negative value.
+      ### V flag is set because there is an overflow condition when 0x7FFFFFFF value is incremented by 1, indicating that the result does not fit in the number of bits available.
    
 2. If your write all Fs (0XFFFFFFFF) in the Register value for “counter” then step thru the program  
    once to increment “counter”  
