@@ -6,15 +6,18 @@
    b) What is the value of the “counter” in the “Registers” window?  
       ## 0x8000'0000
    c) Please note down which flags are set in the APSR register. And explain why.  
-      ## N, V
+      ## N (Negative), V (Overflow)
       ### N flag is set because msb (bit 31) is set to 1, and that indicates a negative value.
-      ### V flag is set because there is an overflow condition when 0x7FFFFFFF value is incremented by 1, indicating that the result does not fit in the number of bits available.
+      ### V flag is set because there is an overflow condition when 0x7FFFFFFF value is incremented by 1, indicating that the result does not fit in the number of bits available. (0x7fffffff + 1) results in a 2's complement (negative number) of 0x7fffffff), that is 0x 0107fffffff, so the overflow bit 32, cannot be accomodated in the available word size of 32 bits(bit 0 to bit 31).
    
 2. If your write all Fs (0XFFFFFFFF) in the Register value for “counter” then step thru the program  
    once to increment “counter”  
    a) What happens to the value of “counter” in the “Locals” window?  
+      ### The value of counter becomes '0' after increment.
       
    b) Please note down which are set in the APSR register. And explain why.  
+      ### Z (Zero) flag is set, because the contents of Register R1 are 0x0000.
+      ### C (Carry) flag is set, because when (0xffffffff + 1) was executed, it resulted in a Carry bit off bit 31.
    
 3. Change the “counter” variable type in your code to “unsigned int”. Inject the values  
    “0x7FFFFFFF” then step thru the program to increment the “counter” once:  
