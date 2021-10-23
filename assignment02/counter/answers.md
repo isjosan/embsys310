@@ -22,9 +22,13 @@
 3. Change the “counter” variable type in your code to “unsigned int”. Inject the values  
    “0x7FFFFFFF” then step thru the program to increment the “counter” once:  
    a) What is the value of “counter” in the “Locals” window after incrementing for each value?  
-   
+      ## 2'147'483'648
+     
    b) Please note down which flags are set in the APSR register. And explain why.  
- 
+      ### N (Negative), V (Overflow), after first increment
+      ### N (Negative) after second increment
+      ### N flag is set because msb (bit 31) is set to 1; although counter is declared unsigned int, still N flag is set to 1 as it is the msb (bit 31), that is intended to be sign bit for negative integers (2's complement representation).
+      ### V flag is still set in the first increment, but gets cleared in the second incremeent, as now only positive integers are counted, bit 31 loses its meaning as a sign bit. 
  4. Change the “counter” variable type in your code to “unsigned”. Inject the values “0xFFFFFFFF”  
     then step thru the program to increment the “counter” once:  
     a) What is the value of “counter” in the “Locals” window after incrementing for each value?  
