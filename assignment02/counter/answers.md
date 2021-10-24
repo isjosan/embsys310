@@ -39,13 +39,16 @@
  5. Move the “counter’ variable outside of main (at the top of the file):  
      
      a) What is the scope of the variable “counter”?  
-   
-   
+     ### The "counter" variable now has 'file scope', that extends from its point of declaration to the end of file 'main.c'.  
+     
      b) Is it still visible in the “Locals” view?  
+     ### No, it is not, because it is no longer a 'local' variable.
    
      c) In which window view can we track “counter” now?  
+     ### Variable 'counter' can now be tracked in 'Watch' window.
    
      d) What is the address of the “counter” variable in memory?  
+     ### Address of the 'counter' variable in memory is 0x20000000.
    
  6. Change the source code to the following, then run the program in the simulator:  
       int counter = 0x0;  
@@ -58,8 +61,10 @@
       return 0;  
       }  
      a) What is the value of “counter” at the end of the program (halting at the return 0 statement)  
+     ### The value of "counter" at the end of the program is '4'.   
   
      b) Explain why the counter value has changed?  
+     ### The counter value has changed because the pointer variable *p_int stores the memory address 0x20000000 where the "counter" value is stored. In the program, the *p_int is dereferenced 3 times and incremented each time, that is, the counter value stored at the address in *p_int is incremented 3 times. Subsequently, the counter++ statement increments the counter value 1 more time. The total counter value is 4 at the end of the program.  
      
    7. Change the setting of IAR to run the same program on the evaluation board:  
       a) What is the address where “counter” is stored?  
