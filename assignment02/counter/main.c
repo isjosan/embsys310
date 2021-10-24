@@ -1,8 +1,22 @@
+int counter = 0x0;
+
 int main()
 {
+  int *p_int = (int *)0x20000000;
+  ++(*p_int);
+  ++(*p_int);
+  ++(*p_int);
+  counter++;
+  return 0;
+}
+
   
-  int counter = 0;
-  
+
+/* Source code for the initial counter program */
+/* unsigned int counter = 0;
+
+int main()
+{ 
   counter++;
   counter++;
   counter++;
@@ -13,3 +27,4 @@ int main()
   
   return 0;
 }
+*/
