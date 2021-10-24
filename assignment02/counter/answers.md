@@ -32,8 +32,9 @@
  4. Change the “counter” variable type in your code to “unsigned”. Inject the values “0xFFFFFFFF”  
     then step thru the program to increment the “counter” once:  
     a) What is the value of “counter” in the “Locals” window after incrementing for each value?  
-    
-    b) Please note down which are set in the APSR register. And explain why.
+    ## 4'294'967'295  
+    b) Please note down which are set in the APSR register. And explain why.  
+    ### N (negative) flag is set, because the msb (bit 31) is set to 1, although the value is interpreted as that of a unsigned int, and the signed bit is ignored.
   
  5. Move the “counter’ variable outside of main (at the top of the file):  
      
