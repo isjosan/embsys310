@@ -3,5 +3,8 @@
     <project>
         <path>$WS_DIR$\blnk-led.ewp</path>
     </project>
+    <project>
+        <path>$WS_DIR$\morse-code-led\morse-code-led.ewp</path>
+    </project>
     <batchBuild />
 </workspace>

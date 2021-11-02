@@ -6,8 +6,8 @@
 #define GPIOA_ODR (GPIOA_BASE + 0x14) /* GPIOA Port Output Data Register */
 #define RCC_AHB2ENR_DATA 0x00000001 /* Reset Value: 0x00000000 */
 #define GPIOA_MODER_DATA 0x00000400 /* Reset Value: 0xABFFFFFF */
-#define GPIOA_ODR_LED_ON_DATA 0x00000020 /* Reset Value: 0x00000000 */
-#define GPIOA_ODR_LED_OFF_DATA 0x00000000
+#define GPIOA_ODR_LED_DATA 0x00000020 /* Reset Value: 0x00000000 */
+#define GPIOA_ODR_LED_CLR_DATA 0x00000000
 
 const unsigned int DLY = 1000000;
 
@@ -20,10 +20,10 @@ void main()
   
   while(1)
   {
-      *((unsigned int*)GPIOA_ODR) = GPIOA_ODR_LED_ON_DATA; /* Turn ON LED1 */
+      *((unsigned int*)GPIOA_ODR) ^= GPIOA_ODR_LED_DATA; /* Use XOR to toggle LED1 (ON)*/
       delay(DLY);
       
-      *((unsigned int*)GPIOA_ODR) = GPIOA_ODR_LED_OFF_DATA; /* Turn OFF LED1 */
+      *((unsigned int*)GPIOA_ODR) ^= GPIOA_ODR_LED_DATA; /* Use XOR to toggle LED1 (OFF) */
       delay(DLY);
   }  
 }
