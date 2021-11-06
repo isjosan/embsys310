@@ -1,13 +1,24 @@
 # Qs & As
 
 Q.a  What is Morse Code?
-#### Morse Code is an encoding method used in telecommunications to encode English alphabet characters (A to Z) and decimal numerals ( 0 to 9) into a standardized sequence of 2 different signal durations. The 2 basic signals are called dots and dashes, or dits and dahs. For example,  
-#### the character I is represented by the sequence 'dot space dot'  
-#### the character Q is represented by the sequence 'dash space dash space dot space dash'
-#### the character B is represented by the sequence 'dash space dot space dot space dot'
-#### the character A is represented by the sequence 'dot space dash'
-#### the character L is represented by the sequence 'dot space dash space dot space dot'
+#### Morse Code is an encoding method used in telecommunications to encode English letters (A to Z) and decimal numerals ( 0 to 9) into a standardized sequence of 2 different signal durations. The 2 basic signals are called dots and dashes, or dits and dahs. For example,  
+#### the letter I is represented by the sequence 'dot space dot'  
+#### the letter Q is represented by the sequence 'dash space dash space dot space dash'
+#### the letter B is represented by the sequence 'dash space dot space dot space dot'
+#### the letter A is represented by the sequence 'dot space dash'
+#### the letter L is represented by the sequence 'dot space dash space dot space dot'
+#### the numeral 9 is represented by the sequence 'dash space dash space dash space dash space dot'
+#### For transmission of text in Morse Code, a unit length of time depends on the transmission speed measured in 'words per minute' (wpm). For example, it could be as high as 1 second, or as low as 1/4 th of a second, or even smaller if an electronic Morse keyer is used. The transmission speed depends on the characteristics of the communication channel, and also the capabilities of the transmission and receiver communication equipment. For a human operator using a mechanical Morse Key (or Telegraph Key), there may be an upper limit to the keying speed of 20 wpm for an experienced operator.
+#### The International Standard for Morse Code defines the following signal durations for encoded letters, numbers and words:
+#### - Dot has a duration of 1 unit of time.
+#### - Dash has a duration of 3 units of time.
+#### - Space between parts of the same letter is 1 unit of time.
+#### - Space between letters is 3 units of time.
+#### - Space between words is 7 units of time.
 
+
+#### Representation of dots and dashes can be done in physical terms by the following methods:
+#### - 
 
 
 Q.b Who developed Morse Code?
