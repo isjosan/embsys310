@@ -22,7 +22,7 @@ Q.a  What is Morse Code?
 #### Representation of dots and dashes can be done in physical communication channel by the following methods:
 #### - Audible Tones representing dots and dashes in frequency range pf 600 - 800 Hz
 #### - Visible flashes of monochromatic light, concentrated in a narrow beam in the direction of receiver.
-#### - Any pther method suitable for encoding and decoding of Morse Code synbols.
+#### - Any other method suitable for encoding and decoding of Morse Code synbols.
 
 
 Q.b Who developed Morse Code?
