@@ -8,7 +8,7 @@ Q.a  What is Morse Code?
 #### the letter A is represented by the sequence 'dot space dash'
 #### the letter L is represented by the sequence 'dot space dash space dot space dot'
 #### the numeral 9 is represented by the sequence 'dash space dash space dash space dash space dot'
-#### For transmission of text in Morse Code, a unit length of time depends on the transmission speed measured in 'words per minute' (wpm). For example, it could be as high as 1 second, or as low as 1/4 th of a second, or even smaller if an electronic Morse keyer is used. The transmission speed depends on the characteristics of the communication channel, and also the capabilities of the transmission and receiver communication equipment. For a human operator using a mechanical Morse Key (or Telegraph Key), there may be an upper limit to the keying speed of 20 wpm for an experienced operator.
+#### For transmission of text in Morse Code, a unit length of time depends on the transmission speed measured in 'words per minute' (wpm). For example, the unit length of time could be as high as 1 second, or as low as 1/4 th of a second, or even smaller if an electronic Morse keyer is used. The transmission speed depends on the characteristics of the communication channel, and also the capabilities of the transmission and receiver communication equipment. For a human operator using a mechanical Morse Key (or Telegraph Key), there may be an upper limit to the keying speed of 20 wpm for an experienced operator.
 #### The International Standard for Morse Code defines the following signal durations for encoded letters, numbers and words:
 #### - Dot has a duration of 1 unit of time.
 #### - Dash has a duration of 3 units of time.
