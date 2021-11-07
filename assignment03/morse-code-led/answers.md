@@ -19,8 +19,8 @@ Q.a  What is Morse Code?
 #### So, the word 'IQBAL' followed by numeral 9 will be encoded in Morse Code as below (Each space is equivalent to 1 unit of time; Morse Code Symbols are in single quotes ' '):
 ## I 'dot space dot' 'space space space ' Q 'dash space dash space dot space dash' 'space space space' B 'dash space dot space dot space dot' 'space space space' A 'dot space dash' 'space space space' L 'dot space dash space dot space dot' 'space space space space space space space' 9 'dash space dash space dash space dash space dot'
 
-#### Representation of dots and dashes can be done in physical communication channel by the following methods:
-#### - Audible Tones representing dots and dashes in frequency range pf 600 - 800 Hz
+#### Representation of dots and dashes can be done in physical communications channel by the following methods:
+#### - Audible Tones representing dots and dashes in frequency range of 600 - 800 Hz.
 #### - Visible flashes of monochromatic light, concentrated in a narrow beam in the direction of receiver.
 #### - Any other method suitable for encoding and decoding of Morse Code synbols.
 
