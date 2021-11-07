@@ -8,7 +8,7 @@ Q a.  What is Morse Code?
 #### the letter A is represented by the sequence 'dot space dash'
 #### the letter L is represented by the sequence 'dot space dash space dot space dot'
 #### the numeral 9 is represented by the sequence 'dash space dash space dash space dash space dot'
-#### For transmission of text in Morse Code, a unit length of time is inversely proportional to the transmission speed measured in 'words per minute' (wpm). For example, the unit length of time could be as high as 1 second, or as low as 1/4 th of a second, or even smaller if an electronic Morse keyer is used. The transmission speed depends on the characteristics of the communication channel, and also the capabilities of the transmission and receiver communications equipment. For a human operator using a mechanical Morse Key (or Telegraph Key), there may be an upper limit to the keying speed of 20 wpm for an experienced operator.
+#### For transmission of text in Morse Code, a unit length of time is inversely proportional to the transmission speed measured in 'words per minute' (wpm). For example, the unit length of time could be as high as 1 second, or as low as 1/4 th of a second, or even smaller if an electronic Morse keyer is used. The transmission speed depends on the characteristics of the communication channel, and also the capabilities of the transmission and receiver communications equipment. For a human operator using a mechanical Morse Key (or Telegraph Key), there may be an upper limit to the keying speed of 20 to 30 wpm for an experienced operator.
 #### The International Standard for Morse Code defines the following signal durations for encoded letters, numbers and words:
 #### - Dot has a duration of 1 unit of time.
 #### - Dash has a duration of 3 units of time.
@@ -25,4 +25,5 @@ Q a.  What is Morse Code?
 #### - Any other method suitable for encoding and decoding of Morse Code synbols.
 
 
-Q b. Who developed Morse Code?
+Q b. Who developed Morse Code?  
+#### Morse Code was developed by Samuel F. B. Morse (1791 - 1872). He was a painter and founder of the National Academy of Design. In 1832, while on a ship returning from Europe, he conceived the basic idea of an electromagnetic telegraph. Experiments with various kinds of electrical instruments and codes resulted in a demonstration of a working telegraph set in 1836, and introduction of the circuit relay. This made transmission possible for any distance. With his creation of the American Morse Code, the historic message, "What hath God wrought?" was successfully sent from Washington to Baltimore.
