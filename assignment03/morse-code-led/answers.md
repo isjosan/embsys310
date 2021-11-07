@@ -16,7 +16,7 @@ Q.a  What is Morse Code?
 #### - Space between letters is 3 units of time.
 #### - Space between words is 7 units of time.
 
-#### So, the word 'IQBAL' followed by numeral 9 will be encoded in Morse Code as below ( Each space is equivalent to 1 unit of time; Morse Code Symbols are in single quotes):
+#### So, the word 'IQBAL' followed by numeral 9 will be encoded in Morse Code as below (Each space is equivalent to 1 unit of time; Morse Code Symbols are in single quotes):
 ## I 'dot space dot' 'space space space ' Q 'dash space dash space dot space dash' 'space space space' B 'dash space dot space dot space dot' 'space space space' A 'dot space dash' 'space space space' L 'dot space dash space dot space dot' 'space space space space space space space' 9 'dash space dash space dash space dash space dot'
 
 #### Representation of dots and dashes can be done in physical communication channel by the following methods:
