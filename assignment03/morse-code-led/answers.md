@@ -1,7 +1,7 @@
 # Qs & As
 
 Q.a  What is Morse Code?
-#### Morse Code is an encoding method used in telecommunications to encode English letters (A to Z) and decimal numerals ( 0 to 9) into a standardized sequence of 2 different signal durations. The 2 basic signals are called dots and dashes, or dits and dahs. For example,  
+#### Morse Code is a basic encoding method used in telecommunications to encode English letters (A to Z) and decimal numerals ( 0 to 9) into a standardized sequence of 2 different signal durations. The 2 basic signals are called dots and dashes, or dits and dahs. For example,  
 #### the letter I is represented by the sequence 'dot space dot'  
 #### the letter Q is represented by the sequence 'dash space dash space dot space dash'
 #### the letter B is represented by the sequence 'dash space dot space dot space dot'
