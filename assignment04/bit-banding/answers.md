@@ -10,4 +10,4 @@ RCC_AHB2ENR bit when using bit-band address?
 b. What were the instructions produced when writing to the RCC_AHB2ENR without using  
 bit-banding?  
 
-![no-bit-bang](   )
+![no-bit-bang](https://github.com/isjosan/embsys310/blob/master/assignment04/bit-banding/images/no-bit-band.PNG)
