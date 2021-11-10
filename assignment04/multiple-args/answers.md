@@ -5,7 +5,7 @@ Create a function “func1” with 5 arguments and call “func1” from within 
 
 a. How does the calling function “func2” pass the values to the called function “func1”?  
 
-![func2]()
+![func2](https://github.com/isjosan/embsys310/blob/master/assignment04/multiple-args/images/func2.PNG)
 
 b. What extra code did the compiler generate before calling the function “func1” with the
 multiple arguments?  
