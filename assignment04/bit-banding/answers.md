@@ -1,8 +1,9 @@
 # Q's & A's  
 
-##### Follow the same steps as we did in the class to blink LED1 (PA5) at a visible rate using the bit band region to enable the clock for Port A, then answer the following:
-##### a. What instructions does the compiler produce in assembly for “writing” to the  
-##### RCC_AHB2ENR bit when using bit-band address?  
+Follow the same steps as we did in the class to blink LED1 (PA5) at a visible rate using the bit band region to enable the clock for Port A, then answer the following:  
 
-##### b. What were the instructions produced when writing to the RCC_AHB2ENR without using  
-##### bit-banding?
+a. What instructions does the compiler produce in assembly for “writing” to the  
+RCC_AHB2ENR bit when using bit-band address?  
+
+b. What were the instructions produced when writing to the RCC_AHB2ENR without using  
+bit-banding?
