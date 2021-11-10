@@ -18,7 +18,7 @@ void delay(unsigned int max_count);
 
 void main(void)
 {
-  *((unsigned int*)GPIOA_CLK_ENABL) = 0x1; /* Enable Clock Gating for GPIOA with GPIO CLK ENABLE BIT WOTRD ADDRESS */
+  *((unsigned int*)GPIOA_CLK_ENABL) = 0x1; /* Enable Clock Gating for GPIOA with GPIO CLK ENABLE BIT WORD ADDRESS */
   //*((unsigned int*)RCC_AHB2ENR) |= RCC_AHB2ENR_DATA; /* Enable Clock Gating for GPIOA */
   *((unsigned int*)GPIOA_MODER) &= GPIOA_MODER_DATA; /* Set PA5 for LED1 for OUTPUT */
   
