@@ -11,7 +11,7 @@ a. How does the calling function “func2” pass the values to the called funct
 b. What extra code did the compiler generate before calling the function “func1” with the
 multiple arguments?  
 ### The compiler generated extra code to PUSH R4-R5 to the stack. Then, a Load was done on R4, with the contents of stack memory location pointed to by (SP + 0x08), that is actually the same location where the 5th argument passed to func1 was pushed, as shown in the first 2 instructions at the top of the snippet below:
-![before-func1](https://github.com/isjosan/embsys310/blob/master/assignment04/multiple-args/images/before-func1.PNG)  
+![func1](https://github.com/isjosan/embsys310/blob/master/assignment04/multiple-args/images/func1.PNG)  
 
 
 c. What extra code did the compiler generate inside the called function “funct1” with the
