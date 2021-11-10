@@ -11,6 +11,9 @@ a. How does the calling function “func2” pass the values to the called funct
 b. What extra code did the compiler generate before calling the function “func1” with the
 multiple arguments?  
 
+![before-func1](https://github.com/isjosan/embsys310/blob/master/assignment04/multiple-args/images/before-func1.PNG)  
+
+
 c. What extra code did the compiler generate inside the called function “funct1” with the
 list of multiple arguments?  
 
