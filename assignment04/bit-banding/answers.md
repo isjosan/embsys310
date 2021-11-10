@@ -5,5 +5,9 @@ Follow the same steps as we did in the class to blink LED1 (PA5) at a visible ra
 a. What instructions does the compiler produce in assembly for “writing” to the  
 RCC_AHB2ENR bit when using bit-band address?  
 
+![bit-band](   )
+
 b. What were the instructions produced when writing to the RCC_AHB2ENR without using  
-bit-banding?
+bit-banding?  
+
+![no-bit-bang](   )
