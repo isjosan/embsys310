@@ -16,6 +16,7 @@ multiple arguments?
 
 c. What extra code did the compiler generate inside the called function “funct1” with the
 list of multiple arguments?  
+#### Inside the called function, func1 (as shown in the snippet above), for each array element, first the address of the array element (pointer) is loaded into R5 with LDR.N, next STR instruction is used to Store the argument values stored in R0 - R4 into the memory location pointed to by the address in R5.
 
 d. Any other observations?  
 
