@@ -9,7 +9,7 @@
 #define GPIOA_ODR_LED_DATA 0x00000020 /* Reset Value: 0x00000000 */
 #define GPIOA_ODR_LED_CLR_DATA 0x00000000
 #define BASE_PERIPH_ALIAS  0x42000000 /* Base Address of Peripheral bit-band alias memory region */
-#define GPIOA_CLK_ENABL  (BASE_PERIPH_ALIAS + (0x2104C * 32) + (0 * 4)) /* GPIO CLK ENABLE BIT WORD ADDRESS */
+#define GPIOA_CLK_ENABL  (BASE_PERIPH_ALIAS + (0x2104C * 32) + (0 * 4)) /* GPIOA CLK ENABLE BIT WORD ADDRESS */
 
 
 const unsigned int DLY = 1000000;
