@@ -22,7 +22,7 @@ d. Any other observations?
 
 #### - In the initial reset position in the debugger, the CSTACK shows the data word 0xFEF5EDA5 at the following 2 addresses:  
 
-![cstack]()  
+![cstack](https://github.com/isjosan/embsys310/blob/master/assignment04/multiple-args/images/cstack.PNG)  
 
 The 'Armv8-M Secure Stack Sealing' document from ARM mentions that "Arm recommends that both the Secure Process and the Secure Main stack pointer have 
 a special value, 0xFEF5EDA5, added to the top of the stack. This prevents an attacker using a fake FNC_RETURN or 
