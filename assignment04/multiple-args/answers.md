@@ -20,7 +20,7 @@ list of multiple arguments?
 
 d. Any other observations?  
 
-#### - In the initial reset position in the debugger, the CSTACK shows the data word 0xFEF5EDA5 at the following 2 addresses:  
+#### d.1 In the initial reset position in the debugger, the CSTACK shows the data word 0xFEF5EDA5 at the following 2 addresses:  
 
 ![cstack](https://github.com/isjosan/embsys310/blob/master/assignment04/multiple-args/images/cstack.PNG)  
 
