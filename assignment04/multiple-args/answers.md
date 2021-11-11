@@ -16,7 +16,16 @@ multiple arguments?
 
 c. What extra code did the compiler generate inside the called function “funct1” with the
 list of multiple arguments?  
-#### Inside the called function, func1 (as shown in the snippet above), for each array element, first the address of the array element (pointer) is loaded into R5 with LDR.N, next STR instruction is used to Store the argument values stored in R0 - R4 into the memory location pointed to by the address in R5 plus the offset for each array element.
+#### Inside the called function, func1 (as shown in the snippet above), for each array element, first the address of the array element (pointer) is loaded into R5 with LDR.N, next STR instruction is used to Store the argument values stored in R0 - R4 into the memory location pointed to by the address in R5 plus the 4-byte address offset for each int element in the array.
 
 d. Any other observations?  
+
+#### - In the initial reset position in the debugger, the CSTACK shows the data word 0xFEF5EDA5 at the following 2 addresses:  
+
+![cstack]()  
+
+The 'Armv8-M Secure Stack Sealing' document from ARM mentions that "Arm recommends that both the Secure Process and the Secure Main stack pointer have 
+a special value, 0xFEF5EDA5, added to the top of the stack. This prevents an attacker using a fake FNC_RETURN or 
+EXC_RETURN to enter the Secure world."
+
 
