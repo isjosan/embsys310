@@ -4,7 +4,7 @@ Create a function “func1” with 5 arguments and call “func1” from within 
 “func2”. Trace thru the assembler and note:  
 
 a. How does the calling function “func2” pass the values to the called function “func1”?  
-### The calling function func2 first initializes R4 - R8 with the argument values. Then, it moves the values from R4 - R7 to R0 - R3. However, the value in R8 is stored in the stackaddress pointed by SP.
+### The calling function func2 first initializes R4 - R8 with the argument values. Then, it moves the values from R4 - R7 to R0 - R3. However, the value in R8 is stored at the stack pointer address pointed by SP.
 
 ![func2](https://github.com/isjosan/embsys310/blob/master/assignment04/multiple-args/images/func2.PNG)
 
