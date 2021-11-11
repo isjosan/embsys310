@@ -30,7 +30,7 @@ d. Any other observations?
 ![obsrv1](https://github.com/isjosan/embsys310/blob/master/assignment04/multiple-args/images/obsrv1.PNG)  
 #### #3. The first instrcution when the program enters func2() is a PUSH of R2-R8 & LR to the stack, before R4-R8 are initialized with the argument values (snippet above).  
 
-#### #4. At the return statement in main(), the R0 is initialized with the return value '0' and the POP instruction loads the R1 with PC value (snippet below). This is different from the case when function call returns, it is the LR value that is used to branch off to the next instruction in the program flow.  
+#### #4. At the return statement in main(), the R0 is initialized with the return value '0' and the POP instruction restores the R1 and PC values from the stack(snippet below). This is different from the case when function call returns, it is the LR value that is used to branch off to the next instruction in the program flow.  
 
 ![return](https://github.com/isjosan/embsys310/blob/master/assignment04/multiple-args/images/return.PNG)  
 
