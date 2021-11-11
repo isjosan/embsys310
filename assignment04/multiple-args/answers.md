@@ -32,7 +32,7 @@ d. Any other observations?
 
 #### #4. At the return statement in main(), the R0 is initialized with the return value '0' and the POP instruction loads the R1 with PC value (snippet below). This is different from the case when function call returns, it is the LR value that is used to branch off to the next instruction in the program flow.  
 
-![return]()  
+![return](https://github.com/isjosan/embsys310/blob/master/assignment04/multiple-args/images/return.PNG)  
 
 
 
