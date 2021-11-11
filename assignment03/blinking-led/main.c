@@ -13,7 +13,7 @@ const unsigned int DLY = 1000000;
 
 void delay(unsigned int max_count);
 
-void main()
+int main()
 {
   *((unsigned int*)RCC_AHB2ENR) |= RCC_AHB2ENR_DATA; /* Enable Clock Gating for GPIOA */
   *((unsigned int*)GPIOA_MODER) &= GPIOA_MODER_DATA; /* Set PA5 for LED1 for OUTPUT */
