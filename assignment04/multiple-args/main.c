@@ -4,7 +4,7 @@ int powers[SIZE];
 void func1(int num1, int num2, int num3, int num4, int num5);
 void func2(void);
 
-int main()
+int main(void)
 {
     func2();
     
