@@ -1,6 +1,6 @@
 int counter = 0x0;
 
-int main()
+int main(void)
 {
   int *p_int = (int *)0x20000000;
   ++(*p_int);
