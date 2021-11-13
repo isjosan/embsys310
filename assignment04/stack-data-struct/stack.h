@@ -3,7 +3,6 @@
 #ifndef __STACK_H__
 #define __STACK_H__
 
-#include <stdbool.h>
 // Length of the Stack-max number of integers that can be stored
 enum {STACK_LEN = 10};
 
@@ -19,9 +18,9 @@ int stack_push(int data);
 int stack_pop(void);
 
 // Check if the Stack is empty
-bool stack_isEmpty(void);
+int stack_isEmpty(void);
 
 // Check if the Stack is full
-bool stack_isFull(void);
+int stack_isFull(void);
 
 #endif
