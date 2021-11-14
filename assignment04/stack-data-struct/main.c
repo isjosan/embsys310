@@ -1,83 +1,66 @@
 #include "stack.h"
 #include "main.h"
 #include <assert.h>
+#include <stddef.h>
+
+int* stack_pointer = NULL;
+int* stack_top = NULL;
+int* stack_bottom = NULL;
+int stack[STACK_SIZE] = {NULL};
+int push_data = 0;
+int pop_data = 0;
 
 int main(void)
 {
-   /* stack_init();
-    int push_data = -54; 
-    stack_push(push_data);
-    int pop_data = stack_pop();
-    */
-//TEST1: Successfully Push an unsigned int element to the Stack
-
-void push_unsigned_int(void);
-
-//Test2: Successfully Pop an unsigned int int element from the Stack
-
-void pop_unsigned_int(void);
-
-//TEST3: Successfully Push a signed negative int element to the Stack
-
-void push_signed_int(void);
-
-//TEST4: Successfully Pop a signed negative int element from the Stack
-
-void pop_signed_int(void);
-
-//TEST5: Successfull Push a NULL to the Stack.
-
-void push_null(void);
-
-//TEST6: Successfully Pop a NULL from the Stack.
-
-void pop_null(void);
-
-//TEST7: Successfully Push multiple Large unsigned int to the Stack
-
-void push_multiple_unsigned_int(void);
-
-//TEST8: Successfully Pop multiple Large unsigned int elements from the Stack in revers order.
-
-void pop_multiple_unsigned_int(void);
-
-//TEST9: Successfully Push multiple Large negative signed int elements to the Stack.
-
-void push_multiple_signed_int(void);
-
-//TEST10: Successfully Pop multiple Large negative signed elements from the Stack in reverse order.
-
-void pop_multiple_signed_int(void);
-
-//TEST11: Successfully Push a char element to the stack.
-
-void push_char(void);
-
-//TEST12: Successfully Pop a char element from the stack.
-
-void pop_char(void);
-
-//Test13: Successfully initialize the Stack internals.
-
-void init_stack_internals(void);
-
-//Test14: Successfully test Stack Empty condition.
-
-void stack_empty(void);
-
-//Test15: Successfully test Stack Full condition.
-
-void stack_full(void);
-
-//Test16: Successfully test error condition, when lower bound of stack is breached.
-
-void stack_lower_bounds(void);
-
-//Test17: Successfully test error condition when upper bound of stack is breached.
-
-void stack_upper_bounds(void);
-    
-       
-    
+    init_stack_internals(); 
+    push_positive_int();
+    pop_positive_int();
     return 0;
+}
+
+// Test1: Successfully initialize the Stack internals.
+
+void init_stack_internals(void)
+{
+    // Arrange(setup)
+    // STACK_SIZE = 10, pre-defined in __STACK_H__
+   
+    // Act(execute)
+    stack_init();
+    
+    // Assert(verify)
+    assert(stack_pointer == stack_bottom);
+    assert(stack_top == stack_bottom + STACK_SIZE);
+    assert(stack[0] == NULL);
+    assert(stack[STACK_SIZE - 1] == NULL);
+}
+
+// Test2: Successfully Push an unsigned int element to the Stack.
+
+void push_positive_int(void)
+{
+    // Arrange(setup)
+    push_data = 12345;
+    
+    // Act(execute)
+    stack_push(push_data);
+    
+    // Assert(verify)
+    assert(push_data == stack[0]);
+    assert(stack_pointer == stack_bottom + 1);
+}
+
+// Test3: Successfully Pop an unsigned int element from the Stack.
+
+void pop_positive_int(void)
+{
+    // Arrange(setup)
+    pop_data = 0;
+    
+    // Act(execute)
+    pop_data = stack_pop();
+    
+    // Assert(verify)
+    assert(pop_data == push_data);
+    assert(stack_pointer == stack_bottom);
 }

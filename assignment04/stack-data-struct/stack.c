@@ -1,23 +1,19 @@
 // Implementation file for Stack (LIFO) functions
 #include "stack.h"
-#include <stdbool.h>
-#include <limits.h>
 
-
-int* stack_pointer;
-int* stack_top;
-int* stack_bottom;
-int push_data;
-int pop_data;
 bool isEmpty = false;
 bool isFull = false;
 
 int stack_init()
 {
     // Initialize elements of stack
-    static int stack[STACK_LEN] = {0}; 
+    int count = 0;
+    for(count = 0; count < STACK_SIZE; ++count)
+    {
+        stack[count] = 0;
+    }
     stack_bottom = &stack[0];
-    stack_top = stack_bottom + STACK_LEN;   
+    stack_top = stack_bottom + STACK_SIZE;   
     stack_pointer = stack_bottom;
     
     return 0;
