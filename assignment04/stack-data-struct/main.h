@@ -113,29 +113,8 @@ extern void pop_multiple_signed_int(void);
     
     // Assert(verify)
 
-// Test12: Successfully Push a char element to the Stack.
 
-extern void push_char(void);
-    
-    // Arrange(setup)
-    
-    // Act(execute)
-    
-    // Assert(verify)
-
-// Test13: Successfully Pop a char element from the Stack.
-
-extern void pop_char(void);
-        
-    // Arrange(setup)
-    
-    // Act(execute)
-    
-    // Assert(verify)
-
-
-
-// Test14: Successfully test the Stack Empty condition.
+// Test12: Successfully test the Stack Empty condition.
 
 extern void stack_empty(void);
         
@@ -145,7 +124,7 @@ extern void stack_empty(void);
     
     // Assert(verify)
 
-// Test15: Successfully test the Stack Full condition.
+// Test13: Successfully test the Stack Full condition.
 
 extern void stack_full(void);
         
@@ -155,7 +134,7 @@ extern void stack_full(void);
     
     // Assert(verify)
 
-// Test16: Successfully test Error condition, when lower bound of the Stack is breached.
+// Test14: Successfully test Error condition, when lower bound of the Stack is breached.
 
 extern void stack_lower_bounds(void);
         
@@ -165,7 +144,7 @@ extern void stack_lower_bounds(void);
     
     // Assert(verify)
 
-// Test17: Successfully test Error condition when upper bound of the Stack is breached.
+// Test15: Successfully test Error condition when upper bound of the Stack is breached.
 
 extern void stack_upper_bounds(void);
         

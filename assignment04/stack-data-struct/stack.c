@@ -15,6 +15,7 @@ int stack_init()
     stack_bottom = &stack[0];
     stack_top = stack_bottom + STACK_SIZE;   
     stack_pointer = stack_bottom;
+    isEmpty = true;
     
     return 0;
 }
@@ -22,8 +23,9 @@ int stack_init()
 int stack_push(int push_data)
 {
     *stack_pointer = push_data;
-    stack_isFull();
     ++stack_pointer;
+    stack_isFull();
+    stack_isEmpty();
     if(stack_pointer > stack_top) return -1;
     return 0;
 }
@@ -31,10 +33,11 @@ int stack_push(int push_data)
 int stack_pop(void)
 {
     --stack_pointer;
+    stack_isFull();
+    stack_isEmpty(); 
     if(stack_pointer < stack_bottom) return -1;
     pop_data = *stack_pointer;
     *stack_pointer = 0;
-    stack_isEmpty(); 
     
     return pop_data;
 }
