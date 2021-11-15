@@ -4,6 +4,7 @@
 #define __STACK_H__
 
 #include <stdbool.h>
+#include <limits.h>
 
 // Length of the Stack-max number of integers that can be stored
 enum {STACK_SIZE = 10};

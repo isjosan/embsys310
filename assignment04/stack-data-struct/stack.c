@@ -22,6 +22,11 @@ int stack_init()
 
 int stack_push(int push_data)
 {
+    //In limits.h, INT_MIN is <= -32767; INT_MAX is >= 32767
+    // Check for Integer bounds
+    if(push_data >= 32767) return -1; 
+    if(push_data <= -32767) return -1;
+    if(isFull == true) return -1; //Check if the stack is full
     *stack_pointer = push_data;
     ++stack_pointer;
     stack_isFull();
@@ -32,6 +37,7 @@ int stack_push(int push_data)
 
 int stack_pop(void)
 {
+    if(isEmpty == true) return -1; //Check if the stack is Empty.
     --stack_pointer;
     stack_isFull();
     stack_isEmpty(); 

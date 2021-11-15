@@ -93,10 +93,30 @@ extern void pop_multiple_int(void);
     
     // Assert(verify)
 
+// Test10: Test lower bounds of Pushed integer value
 
-// Test10: Successfully test Error condition, when lower bound of the Stack is breached.
+extern void lower_bound_int(void);
 
-extern void stack_lower_bounds(void);
+    // Arrange(setup)
+    
+    // Act(execute)
+    
+    // Assert(verify)
+
+// Test 11: Test upper bound of Pushed integer value
+
+extern void upper_bound_int(void);
+
+    // Arrange(setup)
+    
+    // Act(execute)
+    
+    // Assert(verify)
+
+
+// Test12: Successfully test Error condition, when lower bound of the Stack is breached.
+
+extern void lower_bound_stack(void);
         
     // Arrange(setup)
     
@@ -104,9 +124,9 @@ extern void stack_lower_bounds(void);
     
     // Assert(verify)
 
-// Test11: Successfully test Error condition when upper bound of the Stack is breached.
+// Test13: Successfully test Error condition when upper bound of the Stack is breached.
 
-extern void stack_upper_bounds(void);
+extern void upper_bound_stack(void);
         
     // Arrange(setup)
     
