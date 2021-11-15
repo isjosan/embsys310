@@ -33,11 +33,13 @@ void init_stack_internals(void)
     stack_init();
     
     // Assert(verify)
+    assert(stack_pointer != NULL);
     assert(stack_pointer == stack_bottom);
     assert(stack_top == stack_bottom + STACK_SIZE);
     assert(stack[0] == NULL);
     assert(stack[STACK_SIZE - 1] == NULL);
     assert(isEmpty == true);
+    assert(isFull == false);
 }
 
 // Test2: Successfully Push an unsigned int element to the Stack.
