@@ -16,7 +16,9 @@ calling the swap_pointer() function?
     int** PtrxPtr;
     int** PtryPtr;
     PtrxPtr = &xPtr;
-    PtryPtr = &yPtr;
+    PtryPtr = &yPtr;  
+#### #4. "main" function is now ready to pass the arguments 'PtrxPtr' and 'PtryPtr' to the swap_pointer() function.  
+
 b. What are the values in R0 & R1 when swap_pointer() is called?  
 #### The
 c. Share a screen shot of the local variables inside of “main” after the function 
