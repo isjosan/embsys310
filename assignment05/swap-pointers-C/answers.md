@@ -21,7 +21,7 @@ calling the swap_pointer() function?
 
 b. What are the values in R0 & R1 when swap_pointer() is called?  
 #### When swap_pointer() is called, R0 & R1 have the arguments that are passed on by "main" to the swap_pointer() function.  
-In this case the values passed are the the poniers to pointers for x and y, i.e., PtrxPtr and PtryPtr.  
+#### In this case the values passed are the the poniers to pointers for x and y, i.e., PtrxPtr and PtryPtr.  
     swap_pointer(PtrxPtr, PtryPtr);
     
 c. Share a screen shot of the local variables inside of “main” after the function 
