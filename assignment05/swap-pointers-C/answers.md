@@ -12,7 +12,7 @@ calling the swap_pointer() function?
     xPtr = &x;
     int* yPtr;
     yPtr = &y;  
-#### #3. Declare int** variables for x and y, and assign them the memory addresses of pointers to x and y:  
+#### #3. Declare int** variables for x and y, and assign them the memory addresses (pointers) to pointers for x and y:  
     int** PtrxPtr;
     int** PtryPtr;
     PtrxPtr = &xPtr;
@@ -20,7 +20,10 @@ calling the swap_pointer() function?
 #### #4. "main" function is now ready to pass the arguments 'PtrxPtr' and 'PtryPtr' to the swap_pointer() function.  
 
 b. What are the values in R0 & R1 when swap_pointer() is called?  
-#### The
+#### When swap_pointer() is called, R0 & R1 have the arguments that are passed on by "main" to the swap_pointer() function.  
+In this case the values passed are the the poniers to pointers for x and y, i.e., PtrxPtr and PtryPtr.  
+    swap_pointer(PtrxPtr, PtryPtr);  
+    
 c. Share a screen shot of the local variables inside of “main” after the function 
 swap_pointer() returns showing the values of the pointers and what they are pointing to  
 #### The
