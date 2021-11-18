@@ -11,7 +11,12 @@ calling the swap_pointer() function?
     int* xPtr;
     xPtr = &x;
     int* yPtr;
-    yPtr = &y;
+    yPtr = &y;  
+#### #3. Declare int** variables for x and y, and assign them the memory addresses of pointers for x and y:  
+    int** PtrxPtr;
+    int** PtryPtr;
+    PtrxPtr = &xPtr;
+    PtryPtr = &yPtr;
 b. What are the values in R0 & R1 when swap_pointer() is called?  
 #### The
 c. Share a screen shot of the local variables inside of “main” after the function 
