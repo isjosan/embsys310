@@ -1,8 +1,8 @@
 # Qs & As  
 
-1. Create a function in “C” that allows swapping of two pointers.
+Create a function in “C” that allows swapping of two pointers.  
 a. Explain what the “main” function does in order to setup the input arguments prior to 
-calling the swap_pointer() function?  
+calling the swap_pointer() function?
 #### THe
 b. What are the values in R0 & R1 when swap_pointer() is called?  
 #### The
