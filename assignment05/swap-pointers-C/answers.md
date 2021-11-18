@@ -12,7 +12,7 @@ calling the swap_pointer() function?
     xPtr = &x;
     int* yPtr;
     yPtr = &y;  
-#### #3. Declare int** variables for x and y, and assign them the memory addresses of pointers for x and y:  
+#### #3. Declare int** variables for x and y, and assign them the memory addresses of pointers to x and y:  
     int** PtrxPtr;
     int** PtryPtr;
     PtrxPtr = &xPtr;
