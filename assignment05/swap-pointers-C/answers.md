@@ -29,6 +29,6 @@ b. What are the values in R0 & R1 when swap_pointer() is called?
    
 c. Share a screen shot of the local variables inside of “main” after the function 
 swap_pointer() returns showing the values of the pointers and what they are pointing to  
-#### Screen shot of the local variables inside of "main" after the function swap_pointer returns:  
+#### Screen shot of the local variables inside of "main" after the function swap_pointer() returns:  
    ![after_swap](https://github.com/isjosan/embsys310/blob/master/assignment05/swap-pointers-C/images/after-swap.PNG)   
    
