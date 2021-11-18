@@ -3,7 +3,8 @@
 Create a function in “C” that allows swapping of two pointers.  
 a. Explain what the “main” function does in order to setup the input arguments prior to 
 calling the swap_pointer() function?
-#### THe
+#### The main function does the following actions to set up the input arguments for the swap_pointer() function:  
+#### 
 b. What are the values in R0 & R1 when swap_pointer() is called?  
 #### The
 c. Share a screen shot of the local variables inside of “main” after the function 
