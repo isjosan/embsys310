@@ -17,7 +17,7 @@ calling the swap_pointer() function?
     int** PtryPtr;
     PtrxPtr = &xPtr;
     PtryPtr = &yPtr;  
-#### #4. "main" function is now ready to pass the arguments 'PtrxPtr' and 'PtryPtr' to the swap_pointer() function, which are actually pointers to pointers for int variables x and y.  
+#### #4. "main" function is now ready to pass the arguments 'PtrxPtr' and 'PtryPtr' to the swap_pointer() function. These arguments are actually pointers to pointers for int variables x and y.  
 
 b. What are the values in R0 & R1 when swap_pointer() is called?  
 #### When swap_pointer() is called, R0 & R1 have the arguments that are passed on by "main" to the swap_pointer() function.  
