@@ -54,8 +54,6 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART1_UART_Init(void);
 
-
-extern uint32_t sqrAsm(int val);
 extern uint32_t divAsm(unsigned int val);
 const char* myCstr = "\nHello from assembly! ";
 
@@ -125,12 +123,6 @@ int main(void)
 
         PrintString("\nx = ");
         Print_uint32(counter);
-
-       /* sqrResult = sqrAsm(counter);
-        PrintString(" x^2 = ");
-        Print_uint32(sqrResult);
-        PrintString("\n");
-        counter--;*/
         
         divResult = divAsm(counter);
         PrintString("  x/2 =    ");
