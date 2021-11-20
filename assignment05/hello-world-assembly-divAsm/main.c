@@ -110,7 +110,6 @@ int main(void)
     HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
 
     uint8_t counter = 128;
-   // uint8_t sqrResult;
     uint8_t divResult;
 
     HAL_UART_Transmit(&huart1, myTxData, sizeof(myTxData), 10);
