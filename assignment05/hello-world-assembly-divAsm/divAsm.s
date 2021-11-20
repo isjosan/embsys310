@@ -43,7 +43,7 @@ Description     : Assembly language function for division by 2
 Function Name   : divAsm
 Description     : Calls C code to print a string; 
                   divides the input argument by 2.
-C Prototype     : int divAsm(val)
+C Prototype     : unsigned int divAsm(unsigned int val)
                 : Where val is the value to be divided by 2.
 Parameters      : R0: integer val
 Return value    : R0
@@ -56,25 +56,7 @@ divAsm
     BL  PrintString     // call PrintString to print the string
     POP {R0, LR}       // Restore R0 and LR
     MOV R1, R0         // R1 = R0
-    LSR R0, R1, #1     // Right shift by 1 bit in R1 to divide by 2, store the reault in R0
+    LSR R0, R1, #1     // Right shift by 1 bit in R1 to divide by 2, store the result in R0
     BX  LR             // return (with function result in R0)
     
     END
-
-/*
-
-
-
-
-sqrAsm
-    PUSH {R0,LR}        // save the input argument and return address
-    LDR R0,=myCstr      // load (global) address of address of string into R0
-    LDR R0,[R0]         // load address of string into R0
-    BL  PrintString     // call PrintString to print the string
-    POP {R0,LR}         // Restore R0 and LR
-    MOV R1, R0          // R1 = R0
-    MUL R0, R1, R0      // R0 = R0 * R1 
-    BX LR               // return (with function result in R0)
-
-    END
-*/
