@@ -45,7 +45,7 @@ Description     : Calls C code to print a string;
                   divides the input argument by 2.
 C Prototype     : unsigned int divAsm(unsigned int val)
                 : Where val is the value to be divided by 2.
-Parameters      : R0: integer val
+Parameters      : R0: unsigned integer val
 Return value    : R0
 *******************************************************************************/  
   
