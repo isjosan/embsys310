@@ -7,7 +7,7 @@ Description     : Assembly language function for division by 2
     EXTERN myCstr       // myCstr defined outside this file.
     
     PUBLIC divAsm       // Exports symbols to other modules
-                        // Making sqrAsm available to other modules.
+                        // Making divAsm available to other modules.
     
 // Code is split into logical sections using the SECTION directive.
 // Source: http://ftp.iar.se/WWWfiles/arm/webic/doc/EWARM_AssemblerReference.ENU.pdf
