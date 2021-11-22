@@ -109,17 +109,15 @@ int main(void)
     /* USER CODE BEGIN WHILE */
     HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
 
-   uint8_t counter = 5;
-   // uint8_t sqrResult;
-   // uint8_t divResult;
+    uint8_t counter = 5;
       
-      char char1 = 'O';
-      char char2 = 'K';
-      char* addr_char1;
-      char* addr_char2;
+    char char1 = 'O';
+    char char2 = 'K';
+    char* addr_char1;
+    char* addr_char2;
       
-      addr_char1 = &char1;
-      addr_char2 = &char2;
+    addr_char1 = &char1;
+    addr_char2 = &char2;
         
     HAL_UART_Transmit(&huart1, myTxData, sizeof(myTxData), 10);
 
