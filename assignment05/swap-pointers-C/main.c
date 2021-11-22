@@ -1,4 +1,4 @@
-// The swap_pointer() function swaps the poniters for int variables x & y.
+// The swap_pointer() function swaps the pointers for int variables x & y.
 void swap_pointer(int** arg1, int** arg2);
 
 int main(void)
