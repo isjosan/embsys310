@@ -55,10 +55,10 @@ swapCharsAsm
     LDR R0, [R0]        // Load address of string into R0
     BL  PrintString     // call PrintString to print the string
     POP {R0-R3, LR}     // Restore R0, R1 and LR
-    LDRB R2, [R0]        // Load R2 with memory contents pointed by first agrument address in R0
-    LDRB R3, [R1]        // Load R3 with memory contents ponied by second argument address in R1
-    STRB R3, [R0]        // Store R3 at memory address pointed by 1st  argument address in R0
-    STRB R2, [R1]        // Store R2 at memory address pointed by 2nd argument address in R1.
+    LDRB R2, [R0]       // Load R2 with memory contents pointed by first agrument address in R0
+    LDRB R3, [R1]       // Load R3 with memory contents ponied by second argument address in R1
+    STRB R3, [R0]       // Store R3 at memory address pointed by 1st  argument address in R0
+    STRB R2, [R1]       // Store R2 at memory address pointed by 2nd argument address in R1.
     BX  LR              // return
     
     END
