@@ -54,9 +54,6 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART1_UART_Init(void);
 
-
-extern uint32_t sqrAsm(int val);
-extern uint32_t divAsm(unsigned int val);
 extern void swapCharsAsm(char* char1, char* char2);
 const char* myCstr = "\nHello from assembly! ";
 
@@ -126,31 +123,6 @@ int main(void)
         
     HAL_UART_Transmit(&huart1, myTxData, sizeof(myTxData), 10);
 
-   /* while (counter)
-    {
-       
-
-        PrintString("\nx = ");
-        Print_uint32(counter);
-
-        sqrResult = sqrAsm(counter);
-        PrintString(" x^2 = ");
-        Print_uint32(sqrResult);
-        PrintString("\n");
-        counter--;
-        
-        divResult = divAsm(counter);
-        PrintString("  x/2 =    ");
-        Print_uint32(divResult);
-        PrintString("\n");
-        counter = divResult;
-
-        HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
-
-        HAL_Delay(1000);
-    }
-    */
 while(counter)
 {
     // swap 2 Character data types in Assembly
