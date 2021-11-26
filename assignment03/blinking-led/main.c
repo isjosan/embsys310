@@ -32,6 +32,6 @@ void delay(unsigned int max_count)
 {
     unsigned int count = 0;
     
-    for(count = 0; count < max_count ; ++count);
+    for(count = 0; count < max_count; ++count);
 }
         
