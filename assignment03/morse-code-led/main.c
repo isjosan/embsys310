@@ -15,7 +15,7 @@ void delay(unsigned int max_count);
 void dotnspace(void);
 void dashnspace(void);
 
-int main(void)
+void main(void)
 {
   *((unsigned int*)RCC_AHB2ENR) |= RCC_AHB2ENR_DATA; /* Enable Clock Gating for GPIOA */
   *((unsigned int*)GPIOA_MODER) &= GPIOA_MODER_DATA; /* Set PA5 for LED1 for OUTPUT */
