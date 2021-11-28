@@ -62,7 +62,7 @@ control_user_led1
 led_on:     ORRS.W   R3, R3, #GPIOA_BIT_5     // Bitwise OR the contents of R3 with GPIO_BIT_5 and store the result in R3 ; to turn the LED ON
             B        delay_prep               // Branch to the instruction with label delay_prep
 led_off:    BICS.W   R3, R3, #GPIOA_BIT_5     // BItwise clear R3 with the complement of GPIOA_BIT_5 and store the result in R3      
-delay_prep: STR      R3, [R2, #GPIOA_ODR]     // Store the contents of R3 in memory with address pointed to by the sum of R2 (GPIO_BASE) and the offset (GPIOA_ODR)
+delay_prep: STR      R3, [R2, #GPIOA_ODR]     // Store the contents of R3 in memory with address pointed to by the sum of R2 (GPIOA_BASE) and the offset (GPIOA_ODR)
             PUSH     {R0 - R3, LR}            // Save the contents of R0-R3 and LR on stack before calling delay subroutine
             MOV      R0, R1                   // Move the contents of R1 (duration argument from main) to R0 (to pass on argument to delay subroutine)
 call_delay: B        delay                    // Branch to delay subroutine in assembly
