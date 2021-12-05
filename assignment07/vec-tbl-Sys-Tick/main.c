@@ -1,4 +1,4 @@
-// This program blinks LED1 in an infinite loop and uses CMSIS
+// This program blinks LED1 in an infinite loop and uses SysTick Handler to decrement delay duration
 #include "stm32l475xx.h"
 #include "system_stm32l4xx.h"
 #include "delay.h"
