@@ -21,6 +21,6 @@ Explain any options that you come up with.
 ### 3.2 Optimize the size of RAM
 #### The following changes were implemented and tested successfully to reduce the total RAM occupied by the program to 130 bytes ( 2 for global variable + 128 for CSTACK):  
 #### 3.2.1 The type of global variable delayInMilliseconds was changed from uint32_t to uint16_t, reducing the size of read-write data for global variable from 4 to 2.
-#### 3.2.2 The CSTACK size configured in IAR Linker was reduced from default 0x8000 to a lower value of 0x80, reducing the size of read-write data for CSTACK from 8192 to 128.
+#### 3.2.2 The CSTACK size configured in IAR Linker was reduced from default 0x2000 to a lower value of 0x80, reducing the size of read-write data for CSTACK from 8192 to 128.
 
 
