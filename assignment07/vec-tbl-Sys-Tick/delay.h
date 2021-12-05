@@ -1,3 +1,4 @@
+//Declarations for delay function
 #ifndef __DELAY_H__
 #define __DELAY_H__
 
