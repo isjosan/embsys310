@@ -1,3 +1,4 @@
+// This program implements customized vector table and startup code
 #include "stm32l4xx_it.h"
 
 #pragma section="CSTACK"
