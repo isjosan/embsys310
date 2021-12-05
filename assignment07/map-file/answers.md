@@ -5,7 +5,7 @@ a. How much total ROM your program is occupying?
 ####   The program is occupying 456 bytes of total ROM, out of which 374 bytes are for read-only code and 82 bytes are for read-only data.
 
 b. How much total RAM your program is using?  
-#### yy  
+####   The program is occupying 8196 bytes of total RAM, out of which 4 bytes are for read-write data for main.o and 8192 bytes are linker created for stack memory (size: 0x2000).
 
 c. What part of your program is using the most ROM?  
 #### yy  
