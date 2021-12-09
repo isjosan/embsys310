@@ -14,11 +14,9 @@ int main(void)
   while(1)
   {
       
-      GPIOA->ODR ^= GPIO_ODR_OD5; //Use XOR to toggle LED1 (ON)
+      GPIOA->ODR ^= GPIO_ODR_OD5; //Use XOR to toggle LED1
       delay(DLY);
       
-      GPIOA->ODR ^= GPIO_ODR_OD5; //Use XOR to toggle LED1 (OFF) 
-      delay(DLY);
   }
     
 }
